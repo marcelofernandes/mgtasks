@@ -17,8 +17,8 @@ export let defineRules = (angularm: AngularmService) => {
         .detr('list_entities', ListingTableComponent)
         .der('table_line', EntityLineComponent)
         .der('show_entity', EntityDetailsComponent)
-        .detr('create_form', CreateEntityComponent)
-        .der('edit_form', EditEntityFormComponent)
+        .detr('create_form', CssCreateFormComponent)
+        .der('edit_form', CssEditFormComponent)
         .pr('edit_form_line', '*', 'code', null, EditFormLineComponent, { inputType: 'number' })
         .dpr('edit_form_line', EditFormLineComponent, { inputType: 'text' });
 };

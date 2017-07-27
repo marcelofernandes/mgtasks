@@ -9,7 +9,7 @@ import { AngularmService, FlashMessageService, EntityComponent, TitleCase, Entit
   selector: 'div [mgEditEntityForm]',
   template: `<div *ngIf="entity">
   <h1>Editing {{ entity.entityType.singular | titleCase }}</h1>
-  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [ngClass]="configuration.formClass">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [ngClass]="'w3-card-4'">
     <div
       [mgForeachProperty]="'edit_form_line'"
       [entity]="entity"

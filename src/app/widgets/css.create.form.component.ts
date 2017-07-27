@@ -8,7 +8,7 @@ import { AngularmService, FlashMessageService, EntityTypeComponent, TitleCase, E
 @Component({
   template: `<div *ngIf="entityType && myForm">
   <h1>New {{ entityType.singular | titleCase }}</h1>
-  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [ngClass]="configuration.formClass">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [ngClass]="'w3-card-4'">
     <div *ngFor="let propertyType of entityType.propertyTypes"
       [mgPropertyType]="'form_line'" [propertyType]="propertyType"
       [mgForm]="myForm"></div>
